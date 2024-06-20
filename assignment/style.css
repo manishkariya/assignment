@@ -1,0 +1,59 @@
+body
+{
+ background-color: aqua;
+ 
+}
+div
+{
+    width: 70%;
+    margin-top: 1px;
+    
+    border-style: solid;
+    border: none;
+    padding: 3px;
+    padding-left: 40px;
+    margin-left: 40px;
+
+    border-width: 5px;
+    background-color: rgb(97, 143, 204);
+    border-radius: 10px;
+    
+}
+input
+{
+
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  margin-left: 150px;
+  border-radius: 5px;
+  border-color: aliceblue;
+  padding: 10px;
+  border: none;
+
+ 
+  
+  
+}
+h1
+{
+    margin-left: 40px;
+    line-height: 0%;
+}
+textarea
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  margin-left: 150px;
+  border-radius: 5px;
+  border-color: aliceblue;
+  padding: 10px;
+  border: none;
+}
+form
+{
+  margin-top: 5px;
+  margin-left: 200px;
+  }
