@@ -8,49 +8,58 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js'></script>
 </head>
-<body  style="align-items: center;">
+<body >
 
-
+    
+ <!-- creat from-->
+ 
     <form>
+      
        <h1>step1:Your details</h1>
-        
-                  <div>
-                       &nbsp Name &nbsp <input type="text" name"name" placeholder="fFirst and last name" size="20" >
+                                
+                  <div class="div ">
+                      <label>  Name </label><input type="text" name"name" placeholder="fFirst and last name" class="input" >
                   </div> 
-                  <div>
-                    &nbsp Email &nbsp<input type="text" name"name" placeholder="example@domain.com" size="20">
+                  <div class="div">
+                    <label> Email </label><input type="text" name"name" placeholder="example@domain.com" class="input">
                    </div> 
-                   <div>
-                    &nbsp  Phone&nbsp<input type="text" name"name" placeholder="Eg. +447500000000" size="20">
-                   </div> 
-                   <h1>step2: Delivery address</h1>
-
-                   <div>
-                    &nbsp Address  <textarea type="text" name=""></textarea>
-                   </div> 
-                   <div>
-                    <label>Post Code</label> <input type="text" name"postcode" size="20">
-                     </div> 
-                     <div>
-                      <lable>country</lable><input type="text" name"country" size="20">
-                     </div> 
-                     <h1>step3:card details</h1>
-                        <div>
-                          card type
-                        <input type="radio" name="cardtype" value="visa">visa
-                        <input  type="radio" name="card type" value="AmEx">AmEx
-                        <input   type="radio" name="cardtype" value="mastercard">Mastercard
+                   <div class="div">
+                    <label>Phone</label><input type="text" name"name" placeholder="Eg. +447500000000" class="input">
                    </div>
-                     <div>
-                        card number <input type="text" name="cardnumber" value="" size="20"> </div>
-                     <div> code<input type="text" name="securitycode" value="" size="20">
-                     </div>
-                     <div>
-                        Name on card<input type="text" name="nameoncard" placeholder="Exact name as on the card" size="20">
-                                         </div>
 
+      <h1>step2: Delivery address</h1>
+
+                   <div class="div" style="height: 60px; "> 
+                   Address<textarea type="text" name=""  style="height: 25px; margin-left: 100px;"></textarea>
+                   </div> 
+                   <div class="div">
+                   Post Code <input type="text" name"postcode" class="input" style="margin-left: 80px;">
+                   </div> 
+                     <div class="div">
+                     country<input type="text" name"country" class="input" style="margin-left: 100px;" >
+                     </div> 
+     <h1>sep3:card details</h1>
+                     
+                       <div class="div" style="height: 33px"> 
+                          card type 
+                          <input type="radio" name="cardtype" value="visa " style="margin-left:15%; "  ><img src="visa.png" height="20px" width="35px">VISA
+                          <input  type="radio" name="card type" value="AmEx" ><img src="amex.jpg" height="20px" width="35px">AmEx
+                          <input   type="radio" name="cardtype" value="mastercard"><img src="mastercard.jpg" height="20px" width="35px">Mastercard
+                          </span>
+                       </div>
+                  
+                     <div class="div">
+                       <label> card number</label> <input type="text" name="cardnumber" value="" class="input" style="margin-left: 60px;"> </div>
+                              <div class="div">CODE<input type="text" name="securitycode" value="" class="input" style="margin-left: 100px;">
+                     </div>
+                     <div class="div">
+                     <label>Name  on card</label><input type="text" name="nameoncard" placeholder="Exact name as on the card" class="input" style="margin-left: 52px;">
+                     </div>
+                     
+                     <span style="margin-left: 140px;">
+                     <button type="button"  name="Buy IT"><b> BUY IT !</b></button>
+                    </span>
 </form>
-    
-    
+
 </body>
 </html>
