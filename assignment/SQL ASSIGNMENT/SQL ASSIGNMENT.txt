@@ -1,0 +1,98 @@
+
+ASSIGNMENT - 1
+
+TABLE-1 
+
+CREATE TABLE `employee1`.`employee` (`EM_ID` INT NULL , `FIRST_NAME` VARCHAR(255) NOT NULL , 
+`LAST_NAME` VARCHAR(255) NOT NULL , 
+`SALARY` INT NOT NULL ,
+ `JOINING_DATE` DATE NOT NULL , 
+`DEPARTMENT` TEXT NOT NULL ,
+ PRIMARY KEY (`EM_ID`));
+SELECT * FROM `employee`
+
+INSERT INTO `employee` (`EM_ID`, `FIRST_NAME`, `LAST_NAME`, `SALARY`, `JOINING_DATE`, `DEPARTMENT`) 
+VALUES ('1', 'JOHAN', 'ABRAHAM', '1000000', '2023-01-01', 'BANKING'),
+ ('2', 'MICHAEL', 'CLERK', '800000', '2013-01-01', 'INSURANCE'),
+ ('3', 'ROY', 'THOMAS', '700000', '2013-02-01', 'BANKING'),
+ ('4', 'TOM', 'JOSE', '600000', '2013-02-01', 'INSURANCE'),
+ ('5', 'JERRY', 'PINTO', '650000', '2013-01-01', 'INSURANCE'),
+ ('6', 'PHILIP', 'MATHEW', '750000', '2013-01-01', 'SERVICES'), 
+('7', 'TESTNAME1', '123', '650000', '2013-01-01', 'SERVICES'), 
+('8', 'TESTNAME2', 'LANME$', '600000', '2013-02-01', 'INSURANCE');
+
+TABLE-2 
+
+CREATE TABLE `incentive` (`insentive_id` INT NULL , `EMPLOYEE_REF_ID` int NOT NULL , 
+`INCENTIVE_DATE` DATE NOT NULL , 
+`INCENTIVE_AMT` INT NOT NULL);
+
+INSERT INTO `incentive` (`insentive_id`, `EMPLOYEE_REF_ID`, `INCENTIVE_DATE`, `INCENTIVE_AMT`) 
+VALUES ('1', '1', '2013-02-01', '5000'), 
+('2', '2', '2013-02-01', '3000'),
+('3', '3', '2013-02-01', '4000'),
+('3', '1', '2013-01-01', '4500'),
+('5', '2', '2013-021-01', '3500');
+
+
+ a)  ANS = SELECT First_Name AS Employee_Name FROM Employee;
+
+ b)  ANS =select FIRST_NAME, JOINING_DATE FROM employee;
+
+ c)  ANS = SELECT * FROM  employee ORDER BY FIRST_NAME ASC, SALARY DESC;
+
+ d) ANS  =SELECT * FROM `employee` WHERE `FIRST_NAME` LIKE '%o%';
+
+ e) ANS =SELECT * FROM `employee`WHERE MONTH(`JOINING_DATE`) = 1;
+
+ f) ANS =SELECT `DEPARTMENT`, SUM(`SALARY`) FROM `employee `GROUP BY `DEPARTMENT` ORDER BY `SALARY` DESC;
+
+ g)SELECT DEPARTMENT, MAX(SALARY) FROM employee GROUP BY DEPARTMENT ORDER BY SALARY ASC;
+
+ h) ANS =  .....PENDING 
+
+
+ i) ANS = select max(SALARY) as second_highest_salary from employee where SALARY < (select max(SALARY) from employee);
+
+j) Ans =SELECT FIRST_NAME FROM employee LEFT JOIN incentive ON employee.FIRST_NAME = incentive.insentive_id;
+l)ANS = select MAX(SALARY),department from employee GROUP by department;
+m) ANS = UPDATE employee SET FIRST_NAME='maulik',LAST_NAME='hadiyal',SALARY='10000',JOINING_DATE='2013-03-01',DEPARTMENT='BANKING';
+
+
+
+ASSIGNMENT - 2
+
+
+
+
+a)  ANS  =  SELECT * FROM order WHERE amt > 1000;
+
+
+b) ANS = SELECT sname,city FROM SALES_PERSON WHERE city = 'London' and comm > 0.10;
+
+
+c) ANS = SELECT * FROM SALES_PERSON WHERE city='London' or city = 'Barcelona';
+
+
+d) ANS =  SELECT * FROM SALES_PERSON WHERE comm BETWEEN 0.10 and 0.12;
+
+e) ANS =  SELECT * FROM TABLE_CUSTOMER WHERE city IS NULL;
+
+
+f) ANS =  SELECT * FROM order WHERE ode BETWEEN 1994-10-03  AND  1994-10-04
+
+
+g) ANS = SELECT * FROM 'TABLE_CUSTOMER'  WHERE cname = 'peel' or cname = 'Motika';
+
+
+h) ANS = SELECT * FROM TABLE_CUSTOMER WHERE cname like 'a%';
+
+
+i) ANS =  SELECT * FROM 'TABLE_CUSTOMER'  WHERE rating <=100 and city='Rome';
+
+
+j) ANS = SELECT * FROM order WHERE amt is NOT NULL or amt!=0;
+
+
+k) ANS =  SELECT count(*) FROM  order GROUP BY cnm;
+
