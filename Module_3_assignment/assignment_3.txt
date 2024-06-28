@@ -1,0 +1,56 @@
+• Write a program for this Pattern:
+*****
+*
+*
+*
+***** 
+
+for($i=0; $i<5; $i++)
+{
+    
+    for($p=0; $p<5; $p++)
+    {  
+        
+        echo "*";
+        if( $i==1 || $i==2 || $i==3 )
+        {
+          break; 
+        }
+        
+    }
+    
+    
+    echo "<br/>";
+}
+
+• Write a program in PHP to print Fibonacci series. 0, 1, 1, 2, 3, 5, 8, 13, 21,34
+
+$num=0;
+$n1=0;
+$n2=1;
+echo $n1." ".$n2;
+while($num<8)
+{
+
+
+    $n3=$n2+$n1;
+
+    echo " ".$n3;
+
+    $n1=$n2;
+    $n2=$n3;
+    $num++;
+
+• Write a PHP program to find the largest of three numbers using ternary
+Operator
+
+$num1=25;
+$num2=45;
+$num3=30;
+
+$large_num=($num1>$num2) ? ($num1>$num3 ? $num1  : $num3) :($num2>$num3 ? $num2 :$num3);
+echo $num1. " " .$num2. " " .$num3. "  latgest number is ".$large_num;
+
+
+
+}
