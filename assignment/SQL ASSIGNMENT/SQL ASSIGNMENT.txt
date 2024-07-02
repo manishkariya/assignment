@@ -49,7 +49,8 @@ VALUES ('1', '1', '2013-02-01', '5000'),
 
  g)SELECT DEPARTMENT, MAX(SALARY) FROM employee GROUP BY DEPARTMENT ORDER BY SALARY ASC;
 
- h) ANS =  .....PENDING 
+ h) ANS = SELECT e.FIRST_NAME , ins.INCENTIVE_AMT AS INCENTIVE_AMT FROM employee e LEFT JOIN insentive ins on ins.employee_ref_id= e.EM_ID WHERE INCENTIVE_AMT > 3000;
+
 
 
  i) ANS = select max(SALARY) as second_highest_salary from employee where SALARY < (select max(SALARY) from employee);
