@@ -1,48 +1,120 @@
+• Write a PHP program to enter marks of five subjects Physics, Chemistry,
+Biology, Mathematics and Computer, calculate percentage and grade by if
+else
+
+Ans = <?php
+
+	$physics =85;
+	$chemistry =90;
+	$biology =72;
+	$mathematics=78;
+	$computer=95;
+	$pr= ($physics+$chemistry+$biology+$mathematics+$computer)/5;
+	         echo "percentage is = &nbsp".$pr;
+
+	if($pr>=70)
+	{
+   	 echo "<br> well done  your garde is  A";
+	}
+	else
+	{
+    	echo"<br>   Try better your  grade is B";
+	}
+           ?>
+
+* write a PHP program for find „Thursday‟ in week using switch
+Function. 
+Ans =
+ 	<?php
+	$day="thursday";
+	switch($day)
+	{
+	    case "monday":
+                  	  echo " it is  monday";
+                                      break;
+                      case "tuesday":
+                    	echo " it is tuesday";
+                    	break;
+                    case "wendsday":
+                    	echo " it is wendsday";
+                    	break;
+                    case "thursday":
+                    	echo " it is thursday";
+                    	break;
+                    case "friday":
+                    	echo "it is friday";
+                    	break;
+                    case "saturday":
+                    	echo "it is saturday";
+                    	break;
+                    default: echo "serch day not availble pls select other day";
+}
+• Write a PHP program to check Leap years between 1901 to 2016 Using
+nested if. 
+
+<?php
+
+
+	$year = 1950;
+
+    if($year<1901)
+     {
+    
+        echo "pls select year 1901 to 2016" ;
+     }
+     elseif($year>2016)
+     {
+    
+        echo "pls select year 1901 to 2016" ;
+     }
+     elseif($year%4==0)
+     {
+        echo $year."&nbsp year is leap year " ;
+     }
+
+     else
+     { echo $year."&nbsp is not leap year";}
+?>
+
 • Write a program for this Pattern:
 *****
 *
 *
 *
 ***** 
-
-for($i=0; $i<5; $i++)
-{
-    
-    for($p=0; $p<5; $p++)
-    {  
-        
-        echo "*";
-        if( $i==1 || $i==2 || $i==3 )
-        {
-          break; 
-        }
-        
-    }
-    
-    
-    echo "<br/>";
-}
+ans = 
+	for($i=0; $i<5; $i++)
+	{
+    		for($p=0; $p<5; $p++)
+    		{  
+        			echo "*";
+        			if( $i==1 || $i==2 || $i==3 )
+        			{
+          			break; 
+        			}
+        		}
+    		echo "<br/>";
+	}
 
 • Write a program in PHP to print Fibonacci series. 0, 1, 1, 2, 3, 5, 8, 13, 21,34
 
-$num=0;
-$n1=0;
-$n2=1;
-echo $n1." ".$n2;
-while($num<8)
-{
-
-
-    $n3=$n2+$n1;
-
-    echo " ".$n3;
-
-    $n1=$n2;
-    $n2=$n3;
-    $num++;
+	$num=0;		
+	$n1=0;
+	$n2=1;
+	echo $n1." ".$n2;
+	while($num<8)
+	{
+	    $n3=$n2+$n1;
+	    echo " ".$n3;
+	    $n1=$n2;
+    	    $n2=$n3;
+    	    $num++;
+                  }
 
 • Write a PHP program to find the largest of three numbers using ternary
 Operator
+
+Ans=
 
 $num1=25;
 $num2=45;
@@ -53,4 +125,78 @@ echo $num1. " " .$num2. " " .$num3. "  latgest number is ".$large_num;
 
 
 
+write a program wether number is a amstrong aur not
+
+<?php
+
+$num = 407;
+$total =0;
+$y =$num;
+
+  while($y!= 0)
+{
+    $rem =$y%10;
+    $total =$total+($rem*$rem*$rem);
+    $y =$y/10;
 }
+
+if($num==$total)
+{
+    echo " number is a amstrong";
+}
+else 
+{
+    echo "number is a not amstrong";
+}
+
+
+
+?>
+
+
+W.a. program to print the below format :
+5 9
+2610
+3711
+4812
+
+
+<?php
+
+$n=0;
+for($i=1;$i<5;$i++)
+{
+    
+       if($i<=$n)
+        {
+            echo $i;
+        }
+            $n=$i+4;
+            echo $n;
+           
+            $n=$n+4;
+            echo $n;
+   
+    echo "<br>";
+}
+
+• What will be the values of $a and $b after the code below is executed?
+Explain your answer.
+$a = '1';
+$b = &$a;
+$b = "2$b"; 
+
+ans =  after code executed ans $a ,$b AND $b value is 21 string
+
+$ a  is store value a string 1
+$b is assigned a reference to the variable $a  mens  $b and $a both same memory location  any change to the value stored at that memory location will be reflcted in bot variables
+
+last variables $b  is value  string 2 and varibles $b   ( varibles  $b  reference to value of $a)  to answer is string  " 21 " 
+
+ $b  new string assigned  21 and $b is a reference to $a  the value of $a is also change to '21' string.
+
+
+
+
+
+ 
